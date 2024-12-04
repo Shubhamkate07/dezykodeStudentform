@@ -1,0 +1,119 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: white;
+}
+.container {
+  background-color: lightskyblue; /* Solid white background */
+  padding: 16px; /* Inner padding */
+  max-width: 600px; /* Maximum width */
+  border-radius: 35px; /* Rounded corners */
+  /* position: relative; Enable absolute positioning for overlay */
+  /* overflow: hidden; Prevent overflow */
+}
+
+
+/* full width for input  */
+input[type=text],input[type=password],input[type=email],input[type=number],input[type=date],input[type=age]{
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #eeeeee;
+  border-radius: 35px;
+  /* background-color: lightskyblue; */
+}
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+input[type=date]:focus,
+input[type=age]:focus {
+  background-color: #eeeeee;
+  outline: none; /* Removes the default focus outline */
+  background: transparent;
+  border: 1px solid #f6ae22; /* Adds border color when focused */
+  box-shadow: none; /* Remove any box-shadow that might be applied */
+}
+
+
+hr{
+  border: 1px solid white;
+  margin-bottom: 25px;
+}
+/* css for btn */
+.btn{
+  color: white;
+  padding: 8px 14px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 35px;
+}
+.btn:hover{
+  opacity: 1;
+}
+.custom-dropdown {
+  border-radius: 35px !important; /* For the button */
+  margin-bottom: 20px;
+}
+
+.custom-dropdown .dropdown-menu {
+  border-radius: 35px !important; /* For the dropdown menu */
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  border-radius: 15px;
+  background-color: white;
+}
+
+.modal-image {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+/* Additional styling can be added as needed */
+
+/* In your CSS file */
+.selected-card {
+  border: 2px solid blue; /* Change color as needed */
+}
+/* outside should be blur for alert of sucessful */
+.alert-container {
+  position: fixed; /* Use fixed to position relative to the viewport */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust position to center */
+  z-index: 1000; /* Ensure it's on top of other elements */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center;
+  align-items: center;
+  pointer-events: none; /* Prevent interaction while showing */
+}
+
+.alert {
+  pointer-events: auto; /* Allow interaction with the alert itself */
+  width: 400px; /* Set a fixed width */
+  text-align: center; /* Center text */
+}
+.selected-card {
+  border-color: #f6ae22;
+}
+.btn-warning {
+  background-color: #6c757d; /* Default background color */
+}
+
+.btn-warning:disabled {
+  background-color: #6c757d; /* Background color when disabled */
+  color: #000; /* Optional: change text color for better contrast */
+  cursor: not-allowed; /* Change cursor to indicate it's disabled */
+}
+
+
